@@ -14,6 +14,7 @@ public class Test4_JenkinParams extends Init
          
     	String browserName = System.getProperty("browser");
     	System.out.println(browserName);
+    	System.out.println("First clone from GITHUB 11:58 PM");
       
     }
     
