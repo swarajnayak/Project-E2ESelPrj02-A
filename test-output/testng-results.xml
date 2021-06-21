@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-20T00:47:51 IST" name="Suite" finished-at="2021-06-20T00:48:07 IST" duration-ms="16555">
+    <groups>
+    </groups>
+    <test started-at="2021-06-20T00:47:51 IST" name="Test" finished-at="2021-06-20T00:48:07 IST" duration-ms="16555">
+      <class name="GrpIDPkg.E2E.Test2_DataProvAnnotations">
+        <test-method signature="basicVeryBasic2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:GrpIDPkg.E2E.Test2_DataProvAnnotations@771a660]" started-at="2021-06-20T00:47:51 IST" name="basicVeryBasic2" data-provider="getData" finished-at="2021-06-20T00:48:01 IST" duration-ms="10560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[text1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicVeryBasic2 -->
+        <test-method signature="basicVeryBasic2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:GrpIDPkg.E2E.Test2_DataProvAnnotations@771a660]" started-at="2021-06-20T00:48:01 IST" name="basicVeryBasic2" data-provider="getData" finished-at="2021-06-20T00:48:07 IST" duration-ms="5941" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[text2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicVeryBasic2 -->
+      </class> <!-- GrpIDPkg.E2E.Test2_DataProvAnnotations -->
+      <class name="GrpIDPkg.E2E.Test1_Google">
+        <test-method signature="basicVeryBasic()[pri:0, instance:GrpIDPkg.E2E.Test1_Google@73e9cf30]" started-at="2021-06-20T00:47:51 IST" name="basicVeryBasic" finished-at="2021-06-20T00:48:05 IST" duration-ms="13925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicVeryBasic -->
+      </class> <!-- GrpIDPkg.E2E.Test1_Google -->
+      <class name="GrpIDPkg.E2E.Test4_JenkinParams">
+        <test-method signature="method4()[pri:0, instance:GrpIDPkg.E2E.Test4_JenkinParams@272113c4]" started-at="2021-06-20T00:47:51 IST" name="method4" finished-at="2021-06-20T00:47:51 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method4 -->
+      </class> <!-- GrpIDPkg.E2E.Test4_JenkinParams -->
+      <class name="GrpIDPkg.E2E.Test3_Assertions">
+        <test-method signature="method3()[pri:0, instance:GrpIDPkg.E2E.Test3_Assertions@2d52216b]" started-at="2021-06-20T00:47:51 IST" name="method3" finished-at="2021-06-20T00:48:01 IST" duration-ms="10094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method3 -->
+        <test-method is-config="true" signature="method3b()[pri:0, instance:GrpIDPkg.E2E.Test3_Assertions@2d52216b]" started-at="2021-06-20T00:48:01 IST" name="method3b" finished-at="2021-06-20T00:48:01 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method3b -->
+      </class> <!-- GrpIDPkg.E2E.Test3_Assertions -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
