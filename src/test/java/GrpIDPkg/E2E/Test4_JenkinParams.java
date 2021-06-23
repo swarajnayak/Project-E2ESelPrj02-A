@@ -16,6 +16,7 @@ public class Test4_JenkinParams extends Init
     	System.out.println(browserName);
     	System.out.println("First clone from GITHUB 11:58 PM");
     	System.out.println("Second change from eclipse prj02-A 12:36 AM");
+    	System.out.println("Change from develp branch - E2ESelPrj02-A 7:39 PM");
       
     }
     
