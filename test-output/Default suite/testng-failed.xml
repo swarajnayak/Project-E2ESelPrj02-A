@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GrpIDPkg.E2E.Test1_Google">
+      <class name="GrpIDPkg.E2E.Test5_GroupIndex_FindElements_Exceptions">
         <methods>
-          <include name="basicVeryBasic"/>
+          <include name="method5_b"/>
+          <include name="method5"/>
         </methods>
-      </class> <!-- GrpIDPkg.E2E.Test1_Google -->
+      </class> <!-- GrpIDPkg.E2E.Test5_GroupIndex_FindElements_Exceptions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

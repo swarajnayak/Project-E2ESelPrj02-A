@@ -25,22 +25,6 @@ public class Init
 	
 	String browserName = System.getProperty("browser");
 	//String browserName = "chrome";
-	
-	
-//    public WebDriver initializeDriver()
-//    {
-//    	driver = new ChromeDriver();
-//    	
-//        System.out.println( "Hello from initializeDriver in: "+getClass().getName()+"-class");
-//        String driverLocation = System.getProperty("user.dir")+"\\chromedriver.exe";
-//        System.setProperty("webdriver.chrome.driver", driverLocation);
-//        driver.manage().window().maximize();
-//        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//        driver.get("https://facebook.com");
-//        
-//        return driver;
-//
-//    }
     
     public WebDriver initializeDriver()
     {

@@ -12,6 +12,7 @@
 			<class name="GrpIDPkg.E2E.Test1_Google" />
 			<class name="GrpIDPkg.E2E.Test2_DataProvAnnotations" />
 			<class name="GrpIDPkg.E2E.Test3_Assertions" />
+			<class name="GrpIDPkg.E2E.Test5_GroupIndex_FindElements_Exceptions" />			
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
