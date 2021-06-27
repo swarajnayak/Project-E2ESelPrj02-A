@@ -27,7 +27,7 @@ public class Test4_JenkinParams extends Init
     	System.out.println("Change from master branch - E2ESelPrj02-B 8:18 PM");
     	
     	System.out.println("Added 27th June 2:15");
-    	Assert.fail();
+    	//Assert.fail();
     }
     
     @AfterClass(alwaysRun=true)

@@ -34,7 +34,7 @@ public class Test3_Assertions extends Init {
 	@Test(groups= {"Sanity"})
 	public void validatePracticePath() {
 			
-		Assert.assertFalse(p1.getPracticeXpath());
+		Assert.assertTrue(p1.getPracticeXpath());
 
 	}
 
