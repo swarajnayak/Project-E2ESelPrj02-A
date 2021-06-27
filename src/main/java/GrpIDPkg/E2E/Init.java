@@ -2,6 +2,7 @@ package GrpIDPkg.E2E;
 
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -18,16 +19,24 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Init 
 {
 	public WebDriver driver;
+	public Properties prop2;
 	
     Properties prop = new Properties();
 	String xpathFile1 = System.getProperty("user.dir")+"\\src\\main\\java\\GrpIDPkg\\E2E\\xpaths1.properties";
-	String xpathFile2 = System.getProperty("user.dir")+"\\src\\main\\java\\GrpIDPkg\\E2E\\xpaths2.properties";  
+	String xpathFile2 = System.getProperty("user.dir")+"\\src\\main\\java\\GrpIDPkg\\E2E\\xpaths2.properties";
+	String dataFile = System.getProperty("user.dir")+"\\src\\main\\java\\Resource\\data.properties";
 	
-	String browserName = System.getProperty("browser");
-	//String browserName = "chrome";
+	
+	//String browserName = System.getProperty("browser");
+	String browserName = "chrome";
     
-    public WebDriver initializeDriver()
+    public WebDriver initializeDriver() throws IOException
     {
+    	
+    	FileInputStream datafis = new FileInputStream(dataFile);
+    	prop2 = new Properties();
+    	prop2.load(datafis);
+    	
     	System.out.println(browserName);
     	
     	if(browserName.contains("chrome")) {  		

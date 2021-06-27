@@ -3,15 +3,21 @@ package GrpIDPkg.E2E;
 import java.io.IOException;
 
 import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 
 public class Test4_JenkinParams extends Init
 {
+	@BeforeClass(alwaysRun=true)
+	public void startUp() throws IOException {
+		driver = initializeDriver();
+		
+	}
 
     @Test
     public void method4() throws IOException
     {
+    	
          
     	String browserName = System.getProperty("browser");
     	System.out.println(browserName);
@@ -23,6 +29,12 @@ public class Test4_JenkinParams extends Init
     	System.out.println("Added 27th June 2:15");
     	Assert.fail();
     }
+    
+    @AfterClass(alwaysRun=true)
+	public void tearDownMethod() {
+		driver.close();
+	}
+
     
     
 

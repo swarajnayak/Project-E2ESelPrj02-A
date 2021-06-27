@@ -5,11 +5,18 @@
     <listener class-name="Resource.Listeners"/>
   </listeners>
   <test thread-count="5" verbose="0" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+      </run>
+    </groups>
     <classes>
       <class name="GrpIDPkg.E2E.Test3_Assertions">
         <methods>
+          <include name="launchUrl"/>
+          <include name="validatePracticePath"/>
           <include name="method3b"/>
-          <include name="method3"/>
+          <include name="startUp"/>
         </methods>
       </class> <!-- GrpIDPkg.E2E.Test3_Assertions -->
     </classes>

@@ -1,38 +1,44 @@
 package GrpIDPkg.E2E;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class Test3_Assertions extends Init {
 	
-	WebDriver driver;
+	public WebDriver driver;
+	Page1 p1;
 	
-	@Test
-	public void method3() throws IOException {
-		
+	@BeforeClass(alwaysRun=true)
+	public void startUp() throws IOException {
 		driver = initializeDriver();
+		p1 = new Page1(driver);
+	}
+	
+	@BeforeMethod(alwaysRun=true)
+	public void launchUrl() {
+		driver.navigate().to(prop2.getProperty("url1"));
+		driver.manage().window().maximize();
+	}
+	
+	@Test(groups= {"Regression"})
+	public void validateSampleString() {
+			
+		Assert.assertEquals("Switch Tab Example", p1.getSampleString());
 
-		FileInputStream fis1 = new FileInputStream(xpathFile1);
-		// FileInputStream fis2 = new FileInputStream(xpathFile2);
-		prop.load(fis1);
-
-		driver.navigate().to("https://www.rahulshettyacademy.com/AutomationPractice/");
-		// String sample = driver.findElement(By.xpath("//legend[contains(text(),'Switch
-		// Tab Example')]")).getText();
-		String sample = driver.findElement(By.xpath(prop.getProperty("SwitchTabExampleXpath"))).getText();
-		Assert.assertEquals("Switch Tab Example", sample);
-		// Assert.assertTrue(driver.findElement(By.xpath("//button[contains(text(),'Practice')]")).isDisplayed());
-		Assert.assertTrue(driver.findElement(By.xpath(prop.getProperty("PracticeXpath"))).isDisplayed());
+	}
+	
+	@Test(groups= {"Sanity"})
+	public void validatePracticePath() {
+			
+		Assert.assertFalse(p1.getPracticeXpath());
 
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun=true)
 	public void method3b() {
 		driver.close();
 	}

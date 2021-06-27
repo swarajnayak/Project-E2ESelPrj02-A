@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 48.005 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.588 s <<< FAILURE! - in TestSuite
+validatePracticePath(GrpIDPkg.E2E.Test3_Assertions)  Time elapsed: 0.122 s  <<< FAILURE!
+java.lang.AssertionError: expected [false] but found [true]
+	at GrpIDPkg.E2E.Test3_Assertions.validatePracticePath(Test3_Assertions.java:37)
+

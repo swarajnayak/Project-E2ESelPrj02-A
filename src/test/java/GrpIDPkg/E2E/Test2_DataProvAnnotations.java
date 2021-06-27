@@ -1,5 +1,7 @@
 package GrpIDPkg.E2E;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
@@ -10,7 +12,7 @@ public class Test2_DataProvAnnotations extends Init {
 	public WebDriver driver;
 
 	@Test(dataProvider = "getData")
-	public void basicVeryBasic2(String user, String pwd, String text) {
+	public void basicVeryBasic2(String user, String pwd, String text) throws IOException {
 		driver = initializeDriver();
 
 		driver.navigate().to("http://www.qaclickacademy.com/");

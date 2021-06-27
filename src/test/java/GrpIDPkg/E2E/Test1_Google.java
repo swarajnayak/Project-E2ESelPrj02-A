@@ -1,5 +1,7 @@
 package GrpIDPkg.E2E;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +14,7 @@ public class Test1_Google extends Init {
 	public WebDriver driver;
 
 	@Test
-	public void basicVeryBasic() {
+	public void basicVeryBasic() throws IOException {
 		
 		driver = initializeDriver();
 

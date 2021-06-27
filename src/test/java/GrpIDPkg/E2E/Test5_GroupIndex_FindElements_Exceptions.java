@@ -18,7 +18,7 @@ public class Test5_GroupIndex_FindElements_Exceptions extends Init
 	WebDriver driver;
 
     @Test
-    public void method5() throws InterruptedException
+    public void method5() throws InterruptedException, IOException
     {
         driver=initializeDriver();    	
     	driver.navigate().to("https://www.tripodeal.com/");
