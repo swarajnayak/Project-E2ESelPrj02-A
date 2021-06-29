@@ -29,7 +29,7 @@ public class Test5_GroupIndex_FindElements_Exceptions extends Init
     	try {
     		ww.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='origin2']")));
 		} catch (Exception e) {
-			System.out.println(e+"element not visible in 6 seconds");
+			System.out.println(e+"element not visible in 2 seconds");
 		}
     	
     	System.out.println("findElements");
@@ -38,7 +38,7 @@ public class Test5_GroupIndex_FindElements_Exceptions extends Init
     	elements.size();
     	
     	driver.findElement(By.xpath("(//input[@name='return_date_new'])[1]")).click();     // Group index concept here
-    	Thread.sleep(4000);
+    	Thread.sleep(2000);
     	driver.findElement(By.xpath("(//input[@name='return_date_new'])[2]")).click();
     	
     	int count=driver.findElements(By.xpath("//input[@name='xx']")).size();
