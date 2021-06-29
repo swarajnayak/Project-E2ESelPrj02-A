@@ -29,6 +29,8 @@ public class Test1_Google extends Init {
 		Actions a = new Actions(driver);
 		a.moveToElement(driver.findElement(By.xpath("//input[@title='Search']"))).sendKeys("dummy").sendKeys(Keys.ENTER)
 				.build().perform();
+		
+		System.out.println("trying single file commit");
 
 		driver.close();
 	}
